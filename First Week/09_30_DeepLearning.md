@@ -4,14 +4,14 @@
 
 ## 最初的式子
 
-$$\mathrm{z} =\,\,\mathrm{w}^{\mathrm{T}}\mathrm{x} +\,\,\mathrm{b}$$
+$$\mathrm{z} =\mathrm{w}^{\mathrm{T}}\mathrm{x} +\mathrm{b}$$  
 
 $$
-\mathrm{\hat{y}} =\,\,\mathrm{a} =\,\,\mathrm{\sigma}\left( \mathrm{z} \right) \,\,=\,\,\frac{1}{1+\,\,\mathrm{e}^{-\mathrm{z}}}
+\mathrm{\hat{y}} =\mathrm{a} =\mathrm{\sigma}\left( \mathrm{z} \right) =\frac{1}{1+\mathrm{e}^{-\mathrm{z}}}
+$$  
+
 $$
- 
-$$
-\mathrm{L}\left( \mathrm{a},\mathrm{y} \right) \,\,=\,\,-\left( \mathrm{y}\log \left( \mathrm{a} \right) \,\,+\,\,\left( 1 -\,\,\mathrm{y} \right) \log \left( 1 -\,\,\mathrm{a} \right) \right) 
+\mathrm{L}\left( \mathrm{a},\mathrm{y} \right) =-\left( \mathrm{y}\log \left( \mathrm{a} \right) +\left( 1 -\mathrm{y} \right) \log \left( 1 -\mathrm{a} \right) \right) 
 $$
 
 
@@ -138,6 +138,6 @@ $$
 
 代码流程：
 
-![930_02.png](attachment:930_02.png)
+![930_02.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/930_02.png)
 
-![930_03.png](attachment:930_03.png)
+![930_03.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/930_03.png)
