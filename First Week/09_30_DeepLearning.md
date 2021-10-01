@@ -32,13 +32,14 @@ $$
 
 $$
 \mathrm{w} :=  \mathrm{w} -  \mathrm{\alpha}\frac{\partial \mathrm{L}\left( \mathrm{w},\mathrm{b} \right)}{\partial \mathrm{w}}
-\\
+\\  
+
 \mathrm{b} :=  \mathrm{b} -  \mathrm{\alpha}\frac{\partial \mathrm{L}\left( \mathrm{w},\mathrm{b} \right)}{\partial \mathrm{b}}
 $$
 
 则要计算相应的微积分：
 
-![930_01.png](attachment:930_01.png)
+![930_01.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/930_01.png)
 
 则有链式法则反向推到可知：
 
@@ -82,9 +83,11 @@ $$
 
 $$
 \mathrm{dw}_1\mathrm{} =  \mathrm{x}1 \cdot   \mathrm{dz} 
-\\
+\\  
+
 \mathrm{dw}_2\mathrm{} =  \mathrm{x}2 \cdot   \mathrm{dz} 
-\\
+\\  
+
 \mathrm{db} =   \mathrm{dz} 
 $$
 
@@ -93,9 +96,11 @@ $$
 
 $$
 \mathrm{w}_1  =  \mathrm{w}_1  -  \mathrm{\alpha dw}_1
-\\
+\\  
+
 \mathrm{w}_2  =  \mathrm{w}_2  -  \mathrm{\alpha dw}_2
-\\
+\\  
+
 \mathrm{b} =  \mathrm{b} -  \mathrm{\alpha db}
 $$
 
@@ -104,14 +109,15 @@ $$
 代价函数已知为：
 
 $$
-\mathrm{J}\left( \mathrm{w},\mathrm{b} \right)   =  \frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\mathrm{L}\left( \mathrm{\hat{y}}^{\left( \mathrm{i} \right)},\mathrm{y}^{\left( \mathrm{i} \right)} \right)}  =  \frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\left( -\mathrm{y}^{\left( \mathrm{i} \right)}log\left( \mathrm{\hat{y}}^{\left( \mathrm{i} \right)} \right)   -  \left( 1-\mathrm{y}^{\left( \mathrm{i} \right)} \right) log\left( 1-\mathrm{\hat{y}}^{\left( \mathrm{i} \right)} \right) \right)}
+\mathrm{J}\left( \mathrm{w},\mathrm{b} \right)   =  \frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\mathrm{L}\left( \mathrm{\hat{y}}^{\left( \mathrm{i}\right)},\mathrm{y}^{\left( \mathrm{i} \right)} \right)}  =  \frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\left( -\mathrm{y}^{\left( \mathrm{i}\right)}log\left( \mathrm{\hat{y}}^{\left( \mathrm{i} \right)} \right)   -  \left( 1-\mathrm{y}^{\left( \mathrm{i} \right)} \right) log\left( 1-\mathrm{\hat{y}}^{\left( \mathrm{i} \right)} \right) \right)}
 $$
 
 修正量：
 
 $$
 \mathrm{w} :=  \mathrm{w} -  \mathrm{\alpha}\frac{\partial \mathrm{J}\left( \mathrm{w},\mathrm{b} \right)}{\partial \mathrm{w}}
-\\
+\\  
+
 \mathrm{b} :=  \mathrm{b} -  \mathrm{\alpha}\frac{\partial \mathrm{J}\left( \mathrm{w},\mathrm{b} \right)}{\partial \mathrm{b}}
 $$
 
@@ -119,9 +125,11 @@ $$
 
 $$
 \mathrm{dw}_1  =  \frac{\partial \mathrm{J}}{\partial \mathrm{w}_1}  =  \frac{1}{\mathrm{m}}\sum_{i=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w}_1}}
-\\
+\\  
+
 \mathrm{dw}_2  =  \frac{\partial \mathrm{J}}{\partial \mathrm{w}_2}  =  \frac{1}{\mathrm{m}}\sum_{i=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w}_2}}
-\\
+\\  
+
 \mathrm{db} =  \frac{\partial \mathrm{J}}{\partial \mathrm{b}}  =  \frac{1}{\mathrm{m}}\sum_{i=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{b}}}
 $$
 
@@ -130,9 +138,11 @@ $$
 
 $$
 \mathrm{w}_1  =  \mathrm{w}_1  -  \mathrm{\alpha dw}_1
-\\
+\\  
+
 \mathrm{w}_2  =  \mathrm{w}_2  -  \mathrm{\alpha dw}_2
-\\
+\\  
+
 \mathrm{b} =  \mathrm{b} -  \mathrm{\alpha db}
 $$
 
