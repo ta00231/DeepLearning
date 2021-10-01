@@ -134,11 +134,11 @@ $$
 $$  
 
 $$
-\mathrm{dw}_1=\frac{\partial \mathrm{J}}{\partial \mathrm{w}_1}=\frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w}_1}}
+\mathrm{dw1}=\frac{\partial \mathrm{J}}{\partial \mathrm{w1}}=\frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w1}}}
 $$  
 
 $$
-\mathrm{dw}=\frac{\partial \mathrm{J}}{\partial \mathrm{w}}=\frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w}}}
+\mathrm{dw2}=\frac{\partial \mathrm{J}}{\partial \mathrm{w2}}=\frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w2}}}
 $$  
 
 更新修正量：
