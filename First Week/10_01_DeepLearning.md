@@ -60,9 +60,9 @@ print('For loop:' + str(1000*(toc - tic)) + 'ms')
 前向传播过程，计算预测值：
 
 $$
-\mathrm{z} =\,\,\mathrm{w}^{\mathrm{T}}\mathrm{x} +\,\,\mathrm{b}
+\mathrm{z} =  \mathrm{w}^{\mathrm{T}}\mathrm{x} +  \mathrm{b}
 \\
-\mathrm{a} =\,\,\mathrm{\sigma}\left( \mathrm{z} \right) 
+\mathrm{a} =  \mathrm{\sigma}\left( \mathrm{z} \right) 
 $$
 
 
@@ -71,11 +71,11 @@ $$
 向量化后：
 
 $$
-\mathrm{Z} =\,\,\left[ \mathrm{z}^{\left( 1 \right)}, \mathrm{z}^{\left( 2 \right)},\mathrm{z}^{\left( 3 \right)}....,\mathrm{z}^{\left( \mathrm{m} \right)} \right] \,\,=\,\,\mathrm{w}^{\mathrm{T}}\mathrm{X} +\,\,\left[ \mathrm{b},\mathrm{b},\mathrm{b}....,\mathrm{b} \right] 
+\mathrm{Z} =  \left[ \mathrm{z}^{\left( 1 \right)}, \mathrm{z}^{\left( 2 \right)},\mathrm{z}^{\left( 3 \right)}....,\mathrm{z}^{\left( \mathrm{m} \right)} \right]   =  \mathrm{w}^{\mathrm{T}}\mathrm{X} +  \left[ \mathrm{b},\mathrm{b},\mathrm{b}....,\mathrm{b} \right] 
 $$  
 
 $$
-\mathrm{A} =\,\,\left[ \mathrm{a}^{\left( 1 \right)}, \mathrm{a}^{\left( 2 \right)},\mathrm{a}^{\left( 3 \right)}....,\mathrm{a}^{\left( \mathrm{m} \right)} \right] \,\,=\,\,\mathrm{\sigma}\left( \mathrm{Z} \right) 
+\mathrm{A} =  \left[ \mathrm{a}^{\left( 1 \right)}, \mathrm{a}^{\left( 2 \right)},\mathrm{a}^{\left( 3 \right)}....,\mathrm{a}^{\left( \mathrm{m} \right)} \right]   =  \mathrm{\sigma}\left( \mathrm{Z} \right) 
 $$
 
 
@@ -90,40 +90,40 @@ A = sigmoid(Z)
 反向传播过程，计算修正值：
 
 $$
-\mathrm{dz} =\,\,\mathrm{a}-\mathrm{y}
+\mathrm{dz} =  \mathrm{a}-\mathrm{y}
 $$
 $$
-\mathrm{dw}_1\mathrm{} =\,\,\mathrm{x}1 \cdot \,\,\mathrm{dz} 
+\mathrm{dw}_1\mathrm{} =  \mathrm{x}1 \cdot   \mathrm{dz} 
 \\
-\mathrm{dw}_2\mathrm{} =\,\,\mathrm{x}2 \cdot \,\,\mathrm{dz} 
+\mathrm{dw}_2\mathrm{} =  \mathrm{x}2 \cdot   \mathrm{dz} 
 \\
-\mathrm{db} =\,\, \mathrm{dz} 
+\mathrm{db} =   \mathrm{dz} 
 $$
 
 
 向量化后：
 
 $$
-\mathrm{Y} =\,\,\left[ \mathrm{y}^{\left( 1 \right)}, \mathrm{y}^{\left( 2 \right)},\mathrm{y}^{\left( 3 \right)}....,\mathrm{y}^{\left( \mathrm{m} \right)} \right] 
+\mathrm{Y} =  \left[ \mathrm{y}^{\left( 1 \right)}, \mathrm{y}^{\left( 2 \right)},\mathrm{y}^{\left( 3 \right)}....,\mathrm{y}^{\left( \mathrm{m} \right)} \right] 
 $$
 
 $$
-\mathrm{dz} =\,\,\mathrm{A} -\,\,\mathrm{Y} =\,\,\left[ \mathrm{a}^{\left( 1 \right)}-\mathrm{y}^{\left( 1 \right)}, \mathrm{a}^{\left( 2 \right)}-\mathrm{y}^{\left( 2 \right)},\mathrm{a}^{\left( 3 \right)}-\mathrm{y}^{\left( 3 \right)}....,\mathrm{a}^{\left( \mathrm{m} \right)}-\mathrm{y}^{\left( \mathrm{m} \right)} \right] 
-$$
-
-
-$$
-\mathrm{dw} =\,\,\frac{1}{\mathrm{m}}\,\,\mathrm{X} \mathrm{dz}^{\mathrm{T}}
+\mathrm{dz} =  \mathrm{A} -  \mathrm{Y} =  \left[ \mathrm{a}^{\left( 1 \right)}-\mathrm{y}^{\left( 1 \right)}, \mathrm{a}^{\left( 2 \right)}-\mathrm{y}^{\left( 2 \right)},\mathrm{a}^{\left( 3 \right)}-\mathrm{y}^{\left( 3 \right)}....,\mathrm{a}^{\left( \mathrm{m} \right)}-\mathrm{y}^{\left( \mathrm{m} \right)} \right] 
 $$
 
 
 $$
-\mathrm{db} =\,\,\frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\mathrm{dz}^{\left( \mathrm{i} \right)}}\,\,=\,\,\frac{1}{\mathrm{m}}\,\,\mathrm{np}.\mathrm{sum}\left( \mathrm{dz} \right) 
+\mathrm{dw} =  \frac{1}{\mathrm{m}}  \mathrm{X} \mathrm{dz}^{\mathrm{T}}
 $$
 
 
 $$
-\mathrm{w}\,\,:=\,\,\mathrm{w}\,\,-\,\,\mathrm{\alpha dw}
+\mathrm{db} =  \frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\mathrm{dz}^{\left( \mathrm{i} \right)}}  =  \frac{1}{\mathrm{m}}  \mathrm{np}.\mathrm{sum}\left( \mathrm{dz} \right) 
+$$
+
+
+$$
+\mathrm{w}  :=  \mathrm{w}  -  \mathrm{\alpha dw}
 \\
-\mathrm{b} :=\,\,\mathrm{b} -\,\,\mathrm{\alpha db}
+\mathrm{b} :=  \mathrm{b} -  \mathrm{\alpha db}
 $$
