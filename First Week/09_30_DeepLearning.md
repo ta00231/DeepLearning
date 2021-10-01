@@ -129,152 +129,17 @@ $$
 
 则具体得：  
 
-<?xml version="1.0"?>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-	<mi mathvariant="normal">d</mi>
-	<msub>
-		<mrow>
-			<mi mathvariant="normal">w</mi>
-		</mrow>
-		<mrow>
-			<mn>1</mn>
-		</mrow>
-	</msub>
-	<mo>=</mo>
-	<mfrac>
-		<mrow>
-			<mi mathvariant="normal">∂J</mi>
-		</mrow>
-		<mrow>
-			<mi mathvariant="normal">∂</mi>
-			<msub>
-				<mrow>
-					<mi mathvariant="normal">w</mi>
-				</mrow>
-				<mrow>
-					<mn>1</mn>
-				</mrow>
-			</msub>
-		</mrow>
-	</mfrac>
-	<mo>=</mo>
-	<mfrac>
-		<mrow>
-			<mn>1</mn>
-		</mrow>
-		<mrow>
-			<mi mathvariant="normal">m</mi>
-		</mrow>
-	</mfrac>
-	<mrow>
-		<munderover>
-			<mo stretchy="false">∑</mo>
-			<mrow>
-				<mi mathvariant="normal">i</mi>
-				<mo>=</mo>
-				<mn>1</mn>
-			</mrow>
-			<mrow>
-				<mi mathvariant="normal">m</mi>
-			</mrow>
-		</munderover>
-		<mrow>
-			<mfrac>
-				<mrow>
-					<mi mathvariant="normal">∂L</mi>
-				</mrow>
-				<mrow>
-					<mi mathvariant="normal">∂</mi>
-					<msub>
-						<mrow>
-							<mi mathvariant="normal">w</mi>
-						</mrow>
-						<mrow>
-							<mn>1</mn>
-						</mrow>
-					</msub>
-				</mrow>
-			</mfrac>
-		</mrow>
-	</mrow>
-</math>
- 
-
-<?xml version="1.0"?>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-	<mi mathvariant="normal">d</mi>
-	<msub>
-		<mrow>
-			<mi mathvariant="normal">w</mi>
-		</mrow>
-		<mrow>
-			<mn>2</mn>
-		</mrow>
-	</msub>
-	<mo>=</mo>
-	<mfrac>
-		<mrow>
-			<mi mathvariant="normal">∂J</mi>
-		</mrow>
-		<mrow>
-			<mi mathvariant="normal">∂</mi>
-			<msub>
-				<mrow>
-					<mi mathvariant="normal">w</mi>
-				</mrow>
-				<mrow>
-					<mn>2</mn>
-				</mrow>
-			</msub>
-		</mrow>
-	</mfrac>
-	<mo>=</mo>
-	<mfrac>
-		<mrow>
-			<mn>1</mn>
-		</mrow>
-		<mrow>
-			<mi mathvariant="normal">m</mi>
-		</mrow>
-	</mfrac>
-	<mrow>
-		<munderover>
-			<mo stretchy="false">∑</mo>
-			<mrow>
-				<mi mathvariant="normal">i</mi>
-				<mo>=</mo>
-				<mn>1</mn>
-			</mrow>
-			<mrow>
-				<mi mathvariant="normal">m</mi>
-			</mrow>
-		</munderover>
-		<mrow>
-			<mfrac>
-				<mrow>
-					<mi mathvariant="normal">∂L</mi>
-				</mrow>
-				<mrow>
-					<mi mathvariant="normal">∂</mi>
-					<msub>
-						<mrow>
-							<mi mathvariant="normal">w</mi>
-						</mrow>
-						<mrow>
-							<mn>2</mn>
-						</mrow>
-					</msub>
-				</mrow>
-			</mfrac>
-		</mrow>
-	</mrow>
-</math>
-
-
 $$
 \mathrm{db} =  \frac{\partial \mathrm{J}}{\partial \mathrm{b}}  =  \frac{1}{\mathrm{m}}\sum_{i=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{b}}}
-$$
+$$  
 
+$$
+\mathrm{dw}_1=\frac{\partial \mathrm{J}}{\partial \mathrm{w}_1}=\frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w}_1}}
+$$  
+
+$$
+\mathrm{dw}_2=\frac{\partial \mathrm{J}}{\partial \mathrm{w}_2}=\frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w}_2}}
+$$  
 
 更新修正量：
 
