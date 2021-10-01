@@ -138,7 +138,7 @@ $$
 $$  
 
 $$
-\mathrm{dw}_2=\frac{\partial \mathrm{J}}{\partial \mathrm{w}_2}=\frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w}_2}}
+\mathrm{dw}=\frac{\partial \mathrm{J}}{\partial \mathrm{w}}=\frac{1}{\mathrm{m}}\sum_{\mathrm{i}=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w}}}
 $$  
 
 更新修正量：
