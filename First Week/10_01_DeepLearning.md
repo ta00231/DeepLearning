@@ -61,7 +61,9 @@ print('For loop:' + str(1000*(toc - tic)) + 'ms')
 
 $$
 \mathrm{z} =  \mathrm{w}^{\mathrm{T}}\mathrm{x} +  \mathrm{b}
-\\
+$$  
+
+$$
 \mathrm{a} =  \mathrm{\sigma}\left( \mathrm{z} \right) 
 $$
 
@@ -94,9 +96,13 @@ $$
 $$
 $$
 \mathrm{dw}_1\mathrm{} =  \mathrm{x}1 \cdot   \mathrm{dz} 
-\\
+$$  
+
+$$
 \mathrm{dw}_2\mathrm{} =  \mathrm{x}2 \cdot   \mathrm{dz} 
-\\
+$$  
+
+$$
 \mathrm{db} =   \mathrm{dz} 
 $$
 
@@ -124,6 +130,8 @@ $$
 
 $$
 \mathrm{w}  :=  \mathrm{w}  -  \mathrm{\alpha dw}
-\\
+$$  
+
+$$
 \mathrm{b} :=  \mathrm{b} -  \mathrm{\alpha db}
 $$
