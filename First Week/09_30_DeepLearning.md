@@ -4,13 +4,13 @@
 
 ## 最初的式子
 
-## $$\mathrm{z} =\,\,\mathrm{w}^{\mathrm{T}}\mathrm{x} +\,\,\mathrm{b}$$
+$$\mathrm{z} =\,\,\mathrm{w}^{\mathrm{T}}\mathrm{x} +\,\,\mathrm{b}$$
 
-## $$
+$$
 \mathrm{\hat{y}} =\,\,\mathrm{a} =\,\,\mathrm{\sigma}\left( \mathrm{z} \right) \,\,=\,\,\frac{1}{1+\,\,\mathrm{e}^{-\mathrm{z}}}
 $$
-
-## $$
+ 
+$$
 \mathrm{L}\left( \mathrm{a},\mathrm{y} \right) \,\,=\,\,-\left( \mathrm{y}\log \left( \mathrm{a} \right) \,\,+\,\,\left( 1 -\,\,\mathrm{y} \right) \log \left( 1 -\,\,\mathrm{a} \right) \right) 
 $$
 
@@ -43,21 +43,21 @@ $$
 则有链式法则反向推到可知：
 
 $$
-\mathrm{dw}_1\mathrm{} =\,\,\frac{\partial \mathrm{L}}{\partial \mathrm{w}_1}\,\,=\,\,\frac{\mathrm{dL}}{\mathrm{dz}}\,\,. \frac{\mathrm{dz}}{\mathrm{dw}_1}
+\mathrm{dw}_1\mathrm{} =\,\,\frac{\partial \mathrm{L}}{\partial \mathrm{w}_1}\,\,=\,\,\frac{\mathrm{dL}}{\mathrm{dz}}\,\,. \frac{\mathrm{dz}}{\mathrm{dw}_1}
 $$
   
 $$
-\mathrm{dw}_2\mathrm{} =\,\,\frac{\partial \mathrm{L}}{\partial \mathrm{w}_2}\,\,=\,\,\frac{\mathrm{dL}}{\mathrm{dz}}\,\,. \frac{\mathrm{dz}}{\mathrm{dw}_2}
+\mathrm{dw}_2\mathrm{} =\,\,\frac{\partial \mathrm{L}}{\partial \mathrm{w}_2}\,\,=\,\,\frac{\mathrm{dL}}{\mathrm{dz}}\,\,. \frac{\mathrm{dz}}{\mathrm{dw}_2}
 $$
   
 $$
-\mathrm{db} =\,\,\frac{\partial \mathrm{L}}{\partial \mathrm{b}}\,\,=\,\,\frac{\mathrm{dL}}{\mathrm{dz}}\,\,. \frac{\mathrm{dz}}{\mathrm{db}}
+\mathrm{db} =\,\,\frac{\partial \mathrm{L}}{\partial \mathrm{b}}\,\,=\,\,\frac{\mathrm{dL}}{\mathrm{dz}}\,\,. \frac{\mathrm{dz}}{\mathrm{db}}
 $$
 
 同理可知：
 
 $$
-\mathrm{dz} =\,\,\frac{\mathrm{dL}\left( \mathrm{a},\mathrm{y} \right)}{\mathrm{dz}}\,\,=\,\,\frac{\mathrm{dL}}{\mathrm{da}}\,\,. \frac{\mathrm{da}}{\mathrm{dz}}
+\mathrm{dz} =\,\,\frac{\mathrm{dL}\left( \mathrm{a},\mathrm{y} \right)}{\mathrm{dz}}\,\,=\,\,\frac{\mathrm{dL}}{\mathrm{da}}\,\,. \frac{\mathrm{da}}{\mathrm{dz}}
 $$
 
 
@@ -74,18 +74,18 @@ $$
 得出：
 
 $$
-\mathrm{dz} =\,\,\mathrm{a}-\mathrm{y}
+\mathrm{dz} =\,\,\mathrm{a}-\mathrm{y}
 $$
 
 
 进而得出：
 
 $$
-\mathrm{dw}_1\mathrm{} =\,\,\mathrm{x}1 \cdot \,\,\mathrm{dz} 
+\mathrm{dw}_1\mathrm{} =\,\,\mathrm{x}1 \cdot \,\,\mathrm{dz} 
 \\
-\mathrm{dw}_2\mathrm{} =\,\,\mathrm{x}2 \cdot \,\,\mathrm{dz} 
+\mathrm{dw}_2\mathrm{} =\,\,\mathrm{x}2 \cdot \,\,\mathrm{dz} 
 \\
-\mathrm{db} =\,\, \mathrm{dz} 
+\mathrm{db} =\,\, \mathrm{dz} 
 $$
 
 
