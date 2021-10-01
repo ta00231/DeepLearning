@@ -32,8 +32,9 @@ $$
 
 $$
 \mathrm{w} :=  \mathrm{w} -  \mathrm{\alpha}\frac{\partial \mathrm{L}\left( \mathrm{w},\mathrm{b} \right)}{\partial \mathrm{w}}
-\\  
+$$  
 
+$$
 \mathrm{b} :=  \mathrm{b} -  \mathrm{\alpha}\frac{\partial \mathrm{L}\left( \mathrm{w},\mathrm{b} \right)}{\partial \mathrm{b}}
 $$
 
@@ -83,11 +84,13 @@ $$
 
 $$
 \mathrm{dw}_1\mathrm{} =  \mathrm{x}1 \cdot   \mathrm{dz} 
-\\  
-
+$$
+  
+$$
 \mathrm{dw}_2\mathrm{} =  \mathrm{x}2 \cdot   \mathrm{dz} 
-\\  
-
+$$
+  
+$$
 \mathrm{db} =   \mathrm{dz} 
 $$
 
@@ -96,11 +99,13 @@ $$
 
 $$
 \mathrm{w}_1  =  \mathrm{w}_1  -  \mathrm{\alpha dw}_1
-\\  
-
+$$
+  
+$$
 \mathrm{w}_2  =  \mathrm{w}_2  -  \mathrm{\alpha dw}_2
-\\  
-
+$$
+  
+$$
 \mathrm{b} =  \mathrm{b} -  \mathrm{\alpha db}
 $$
 
@@ -116,8 +121,9 @@ $$
 
 $$
 \mathrm{w} :=  \mathrm{w} -  \mathrm{\alpha}\frac{\partial \mathrm{J}\left( \mathrm{w},\mathrm{b} \right)}{\partial \mathrm{w}}
-\\  
-
+$$
+  
+$$
 \mathrm{b} :=  \mathrm{b} -  \mathrm{\alpha}\frac{\partial \mathrm{J}\left( \mathrm{w},\mathrm{b} \right)}{\partial \mathrm{b}}
 $$
 
@@ -125,11 +131,13 @@ $$
 
 $$
 \mathrm{dw}_1  =  \frac{\partial \mathrm{J}}{\partial \mathrm{w}_1}  =  \frac{1}{\mathrm{m}}\sum_{i=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w}_1}}
-\\  
-
+$$
+  
+$$
 \mathrm{dw}_2  =  \frac{\partial \mathrm{J}}{\partial \mathrm{w}_2}  =  \frac{1}{\mathrm{m}}\sum_{i=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w}_2}}
-\\  
-
+$$
+  
+$$
 \mathrm{db} =  \frac{\partial \mathrm{J}}{\partial \mathrm{b}}  =  \frac{1}{\mathrm{m}}\sum_{i=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{b}}}
 $$
 
@@ -138,11 +146,13 @@ $$
 
 $$
 \mathrm{w}_1  =  \mathrm{w}_1  -  \mathrm{\alpha dw}_1
-\\  
-
+$$
+  
+$$
 \mathrm{w}_2  =  \mathrm{w}_2  -  \mathrm{\alpha dw}_2
-\\  
-
+$$
+  
+$$
 \mathrm{b} =  \mathrm{b} -  \mathrm{\alpha db}
 $$
 
