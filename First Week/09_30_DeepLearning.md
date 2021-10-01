@@ -83,15 +83,15 @@ $$
 进而得出：
 
 $$
-\mathrm{dw}_1\mathrm{} =  \mathrm{x}1 \cdot   \mathrm{dz} 
+\mathrm{dw}_1\mathrm{} = \mathrm{x}1 \cdot\mathrm{dz} 
 $$
   
 $$
-\mathrm{dw}_2\mathrm{} =  \mathrm{x}2 \cdot   \mathrm{dz} 
+\mathrm{dw}_2\mathrm{} = \mathrm{x}2 \cdot\mathrm{dz} 
 $$
   
 $$
-\mathrm{db} =   \mathrm{dz} 
+\mathrm{db} =  \mathrm{dz} 
 $$
 
 
@@ -127,7 +127,8 @@ $$
 \mathrm{b} :=  \mathrm{b} -  \mathrm{\alpha}\frac{\partial \mathrm{J}\left( \mathrm{w},\mathrm{b} \right)}{\partial \mathrm{b}}
 $$
 
-则具体得：
+则具体得：  
+
 $$
 \mathrm{dw}_1  =  \frac{\partial \mathrm{J}}{\partial \mathrm{w}_1}  =  \frac{1}{\mathrm{m}}\sum_{i=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w}_1}}
 $$  
