@@ -128,15 +128,14 @@ $$
 $$
 
 则具体得：
-
 $$
 \mathrm{dw}_1  =  \frac{\partial \mathrm{J}}{\partial \mathrm{w}_1}  =  \frac{1}{\mathrm{m}}\sum_{i=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w}_1}}
-$$
-  
+$$  
+
 $$
 \mathrm{dw}_2  =  \frac{\partial \mathrm{J}}{\partial \mathrm{w}_2}  =  \frac{1}{\mathrm{m}}\sum_{i=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{w}_2}}
-$$
-  
+$$  
+
 $$
 \mathrm{db} =  \frac{\partial \mathrm{J}}{\partial \mathrm{b}}  =  \frac{1}{\mathrm{m}}\sum_{i=1}^{\mathrm{m}}{\frac{\partial \mathrm{L}}{\partial \mathrm{b}}}
 $$
