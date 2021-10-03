@@ -11,7 +11,7 @@
 
 ## 2. 神经网络的表示
 
-![1002_01.png](attachment:1002_01.png)
+![1002_01.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_01.png)
 
 ### 输入层 隐藏层 输出层
 
@@ -23,7 +23,7 @@
 
 在训练集中，这些中间结点的准确值我们是不知道到的，你能看见输入的值，你也能看见输出的值，但是隐藏层中的东西，在训练集中你是无法看到的。所以这也解释了词语隐藏层，只是表示你无法在训练集中看到他们。
 
-![1002_02.png](attachment:1002_02.png)
+![1002_02.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_02.png)
 
 𝑎表示激活的意思，它意味着网络中不同层的值会传递到它们
 后面的层中，输入层将𝑥传递给隐藏层，所以我们将输入层的激活值称为𝑎
@@ -57,7 +57,7 @@
 复计算。
 
 
-![1002_03.png](attachment:1002_03.png)
+![1002_03.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_03.png)
 
 第一步，计算
 $$
@@ -79,7 +79,7 @@ $$
 
 同样为了避免低效的for循环，向量化很重要
 
-![1002_04.png](attachment:1002_04.png)
+![1002_04.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_04.png)
 
 ## 4.多样本向量化
 
@@ -93,17 +93,17 @@ j 表示第几个样本
 
 未向量化：
 
-![1002_05.png](attachment:1002_05.png)
+![1002_05.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_05.png)
 
 向量化：
 
 横向表示不同样本同一属性，纵向表示同一样本不同属性。（特征、隐藏单元节点等）
 
-![1002_06.png](attachment:1002_06.png)
+![1002_06.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_06.png)
 
 ## 5. 向量化实现的解释
 
-![1002_07.png](attachment:1002_07.png)
+![1002_07.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_07.png)
 
 如图片展示
 
@@ -146,7 +146,7 @@ $$
 
 只要𝑧是正值的情况下，导数恒等于 1，当𝑧是负值的时候，导数恒等于 0。
 
-![1002_08.png](attachment:1002_08.png)
+![1002_08.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_08.png)
 
 #### 激活函数选择经验法则
 
@@ -166,7 +166,7 @@ $$
 
 快速概括一下不同激活函数的过程和结论。
 
-![1002_09.png](attachment:1002_09.png)
+![1002_09.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_09.png)
 
 #### 优缺点对比
 
@@ -194,21 +194,21 @@ $$
 
 ## 8. 激活函数的导数
 
-![1002_10.png](attachment:1002_10.png)
+![1002_10.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_10.png)
 
-![1002_11.png](attachment:1002_11.png)
+![1002_11.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_11.png)
 
-![1002_12.png](attachment:1002_12.png)
+![1002_12.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_12.png)
 
-![1002_13.png](attachment:1002_13.png)
+![1002_13.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_13.png)
 
-![1002_14.png](attachment:1002_14.png)
+![1002_14.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_14.png)
 
 ## 9. 神 经 网 络 的 梯 度 下 降
 
-![1002_15.png](attachment:1002_15.png)
+![1002_15.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_15.png)
 
-![1002_16.png](attachment:1002_16.png)
+![1002_16.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_16.png)
 
 ## 10. 随机初始化
 
@@ -226,7 +226,7 @@ $$
 
 对于b修正偏移量可以用 np.zeros()
 
-![1002_17.png](attachment:1002_17.png)
+![1002_17.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1002_17.png)
 
 对于w后的乘的常数，为什么是 0.01，而不是 100 或者 1000。我们通常
 倾向于初始化为很小的随机数。因为如果你用 tanh 或者 sigmoid 激活函数，或者说只在输
