@@ -16,11 +16,11 @@
 从哪个位置开始，梯度下降法都能够更直接地找到最小值，你可以在梯度下降法中使用较大
 步长，而不需要像在左图中那样反复执行。
 
-![1011_01.png](attachment:1011_01.png)
+![1011_01.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1011_01.png)
 
 ### 归一化的步骤
 
-![1011_02.png](attachment:1011_02.png)
+![1011_02.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1011_02.png)
 
 #### 1.零均值化
 
@@ -59,13 +59,13 @@ $$
 这加大了训练的难度。
 
 
-![1011_04.png](attachment:1011_04.png)
+![1011_04.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1011_04.png)
 
 随机初始化权重选取，导致的指数型效果，不完整的解决方案如下：
 
 ## 3、神经网络的权重初始化
 
-![1011_03.png](attachment:1011_03.png)
+![1011_03.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1011_03.png)
 
 先从一个神经元看起：
 
@@ -99,7 +99,7 @@ $$
 
 在了解梯度检验的前提，我们先了解梯度的数值逼近：  
 其实类似于导数的官方定义的双边检测
-![1011_05.png](attachment:1011_05.png)
+![1011_05.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1011_05.png)
 
 $$
 f\prime\left( \mathrm{\theta} \right) =\lim_{\mathrm{\varepsilon}\rightarrow 0} \frac{f\left( \mathrm{\theta}+\mathrm{\varepsilon} \right) -f\left( \mathrm{\theta}-\mathrm{\varepsilon} \right)}{2\mathrm{\epsilon}}
@@ -110,7 +110,7 @@ $$
 
 实际上就是利用W和b，形成θ，然后因为是对代价函数进行梯度下降，所以函数就为J（θ），对齐进行双边误差检验求解dθ。
 
-![1011_06.png](attachment:1011_06.png)
+![1011_06.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1011_06.png)
 
 接着看得出的结果与自己的dθ比较（欧几里得范数）
 
@@ -131,4 +131,4 @@ $$
 
 ##### 使用注意事项
 
-![1011_07.png](attachment:1011_07.png)
+![1011_07.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1011_07.png)
