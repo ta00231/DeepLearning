@@ -2,9 +2,9 @@
 
 ## 1、 总览
 
-![1004_01.png](attachment:1004_01.png)
+![1004_01.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1004_01.png)
 
-![1004_02.png](attachment:1004_02.png)
+![1004_02.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1004_02.png)
 
 上图是一个四层的神经网络，有三个隐藏层。我们可以看到，第一层（即左边数过去第
 二层，因为输入层是第 0 层）有 5 个神经元数目，第二层 5 个，第三层 3 个。
@@ -92,9 +92,9 @@ $$
 
 ### 总览图
 
-![1004_03.png](attachment:1004_03.png)
+![1004_03.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1004_03.png)
 
-![1004_04.png](attachment:1004_04.png)
+![1004_04.png](https://github.com/ta00231/DeepLearning/blob/main/Pictures/1004_04.png)
 
 ## 3、参数和超参数 Parameters & Hyperparameters
 
